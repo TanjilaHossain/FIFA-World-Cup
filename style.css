@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;500;600;700&family=Splash&family=The+Nautigal:wght@700&display=swap');
+
+
+body {
+    width: 1200px;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 55px;
+}
+
+/* --------------------------------------
+        First Section starts here 
+ -----------------------------------------*/
+
+.container1 {
+    background-color: black;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    display: flex;
+}
+
+.half-width {
+    width: 50%;
+}
+
+.left-side {
+    margin: 20% 5%;
+}
+
+.right-side {
+    padding: 5% 10% 0 0;
+}
+
+.half-width .right-side img {
+    width: 100%;
+}
+
+.section1-font {
+    color: white;
+    margin-bottom: 50px;
+}
+
+.watch-button {
+    background-color: red;
+    text-decoration: none;
+    color: white;
+    margin-top: 30px;
+    padding: 10px 30px;
+    border-radius: 6px;
+}
+
+/* .............................ANimation  */
+.fa-arrow-right {
+
+    transition: transform 1s ease-out .2s;
+
+}
+
+.watch-button:hover .fa-arrow-right {
+    transform: translate(30px);
+}
+
+/* ..........Section 2 Blogs........... */
+.container2 {
+    display: flex;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+
+.container2-links {
+    padding-right: 20px;
+    width: 350px;
+}
+
+.links {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: black;
+}
+
+.button-div {
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.link-button {
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+.blog-button {
+    background-color: red;
+    color: white;
+}
+
+.blogs {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.blog {
+    border: 1px solid rgb(240, 230, 230);
+    border-radius: 10px;
+}
+
+.blog img {
+    width: 100%;
+}
+
+.blog-info {
+    padding: 20px;
+}
+
+.match-blog-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.fa-clock,
+.fa-message {
+    color: gray;
+}
+
+/* ..................................Upcoming Match page......... */
+.match-between {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.match-between div {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------------------------Section 3. Only for TABLET............ */
+
+
+.view-all {
+    display: none;
+}
+
+/* ------------------------------------------
+                FOOTER  
+------------------------------------------*/
+footer {
+    background-color: black;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer h1 {
+    margin-top: 100px;
+    color: white;
+}
+
+.f-hr {
+    opacity: 0.25;
+    width: 80%;
+    color: white;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 10px 50px 10px;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: white;
+}
+
+/* -----------------------------
+    Media Query for    TABLET 
+    -----------------------------*/
+@media only screen and (min-width:688px) and (max-width:992px) {
+
+    body {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .container2 {
+        flex-direction: column;
+    }
+
+    .container2-links {
+        width: 100%;
+        display: flex;
+
+    }
+
+    .links {
+        width: 100%;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .button-div {
+        width: 30%;
+        border: 1px solid gray;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .blogs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hidden-blog {
+        display: none;
+    }
+
+    .blog {
+        width: 100%;
+
+    }
+
+    .blog img {
+        width: 100%;
+    }
+
+    .view-all {
+        display: flex;
+        justify-content: center;
+        margin: 50px;
+    }
+
+    .view-all-div {
+        padding: 15px 30px;
+        border-radius: 5px;
+    }
+}
+
+/* ...................................MOBILE DEVICE......................... */
+@media only screen and (max-width:688px) {
+    body {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    .container1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+    .left-side {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-side h1,
+    p {
+        text-align: center;
+    }
+
+    .watch-button {
+        padding: 10px 10px;
+    }
+
+    .right-side {
+        padding: 0;
+        display: flex;
+
+    }
+
+    .container2 {
+        flex-direction: column;
+
+    }
+
+    .container2-links {
+        width: 100%;
+    }
+
+    .links {
+        background-color: white;
+    }
+
+    .button-div {
+        border: 1px solid gray;
+        border-radius: 10px;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .blog {
+        width: 100%;
+
+    }
+
+    .blog img {
+        width: 100%;
+    }
+
+    footer div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-nav {
+        margin-bottom: 0;
+    }
+}
